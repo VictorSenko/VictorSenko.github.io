@@ -7,7 +7,7 @@ body{
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-    background: #000;
+    background-color: #000;
 }
 .navbar{
     position: relative;
@@ -130,6 +130,68 @@ header{
     width: 40px;
     cursor: pointer;
 }
+.brand__bar{
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #b7b7b7;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+}
+.brand__bar-wrapper{
+    display: inline-block;
+    margin: 0 0 0 10.71%;
+    width: 25.71%;
+}
+.brand__bar-social-main{
+    font-size: 20px;
+    padding: 25px 0 10px 0;
+}
+.brand__bar-social-alt{
+    font-size: 14px;
+    color: #a4a5a8;
+    padding-bottom: 16px;
+}
+.brand__bar-icons{
+    float: right;
+    width: 45.7%;
+    margin: 33px 10.71% 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.brand__bar-item{
+    height: 45px;
+    width: 50px;
+    background-image: url(../images/sosial_media_icons.png);
+    cursor: pointer;
+}
+.brand__bar-item:nth-child(2){
+    background-position:15%;
+}
+.brand__bar-item:nth-child(3){
+    background-position:32%;
+}
+.brand__bar-item:nth-child(4){
+    background-position:48%;
+}
+.brand__bar-item:nth-child(5){
+    background-position:65%;
+}
+.brand__bar-item:nth-child(6){
+    background-position:83%;
+}
+.brand__bar-item:nth-child(7){
+    background-position:100%;
+}
+.brand__bar-item:hover{
+    filter: contrast(120%);
+}
+.main__features{
+    background-color: #fff;
+    width: 100%;
+    height: 500px;
+    
+}
+
 
 
 @media all and (max-width:850px) {
@@ -139,8 +201,19 @@ header{
         flex-direction: column;
         align-items:center;
     }
+   
     .header__signup{
         margin-bottom: 112px;
+        margin-top: 90px
+    }
+    .brand__bar-icons{
+        justify-content: flex-start;
+    }
+    .brand__bar-item{
+        margin: 0 10px 10px 10px;
+    }
+    .brand__bar-item:nth-child(4){
+        margin-right:11%;
     }
 }
 @media all and (max-width:765px){
@@ -169,5 +242,19 @@ header{
         background-color: gray;
         color:burlywood;
         filter: contrast(150%);
+    }
+    .brand__bar-item:nth-child(4){
+        margin: 0 10px 10px 10px;
+    }
+    .brand__bar-wrapper{
+        margin-bottom: 40px;
+    }
+}
+@media all and (max-width:480px){
+    .brand__bar-item{
+        margin: 0 10px 4px 10px;
+    }
+    .brand__bar-icons{
+        margin-top: 10px;
     }
 }
