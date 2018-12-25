@@ -10,6 +10,7 @@ body{
     background: #000;
 }
 .navbar{
+    position: relative;
     width: 100%;
     background-color: #000000;
 }
@@ -18,7 +19,7 @@ body{
 }
 .navbar__links{
     float: right;
-    margin: 27px 17.71% 27px 0;
+    margin: 27px 11.71% 27px 0;
     max-width: 340px;
     width: 100%;
     display: flex;
@@ -27,9 +28,9 @@ body{
 .navbar__links-item{
     color: #ffffff;
     font-size: 14px;
+    cursor: pointer;
 }
 .navbar__links-item:hover{
-    cursor: pointer;
     color: bisque;
 }
 header{
@@ -121,6 +122,14 @@ header{
 .signup__button:hover{
     filter: contrast(150%);
 }
+.navbar__icon{
+    float: right;
+    padding: 20px;
+    margin-right: 20%;
+    display: none;
+    width: 40px;
+    cursor: pointer;
+}
 
 
 @media all and (max-width:850px) {
@@ -134,7 +143,31 @@ header{
         margin-bottom: 112px;
     }
 }
-@media all and(max-width:765px){
-    
-    
+@media all and (max-width:765px){
+    .navbar__links{
+        position: absolute;
+        flex-direction: column;
+        background-color:aliceblue;
+        width: 170px;
+        top:40px; left: 60%;
+        border-radius: 2px;
+        display: none;
+        
+    }
+    .navbar__icon{
+        display: block;
+    }
+    .navbar__links-item{
+        color: gray;
+        font-size: 20px;
+        padding: 10px;
+        height: 100%;
+        text-align: center;
+        border-bottom: 1px solid gray;
+    }
+    .navbar__links-item:hover{
+        background-color: gray;
+        color:burlywood;
+        filter: contrast(150%);
+    }
 }
