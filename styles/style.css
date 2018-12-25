@@ -7,7 +7,7 @@ body{
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-    background: #fff;
+    background: #000;
 }
 .navbar{
     width: 100%;
@@ -28,11 +28,17 @@ body{
     color: #ffffff;
     font-size: 14px;
 }
+.navbar__links-item:hover{
+    cursor: pointer;
+    color: bisque;
+}
 header{
     background-image: url(../images/header_background.png);
+    background-repeat: no-repeat;
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items:flex-start;
 }
 .header__description{
     display: inline-block;
@@ -62,13 +68,15 @@ header{
     text-align: center;
     line-height: 2.4;
     margin-bottom: 112px;
+    cursor: pointer;
+}
+.header__description-button:hover{
+    filter:brightness(80%);
 }
 .header__signup{
     margin: 112px 10.71% 0 10.71%;
-    display: inline-block;
     width: 374px;
     background-color: #fff;
-    height: 500px;
     border-radius: 4px;
 }
 .signup__header{
@@ -77,8 +85,56 @@ header{
     height: 54px;
     font-size: 20px;
     line-height: 2.4;
-    border-radius: inherit;
+    border-radius: 4px 4px 0 0;
 }
 .signup__header-trial{
     color: #ff8b38;
+}
+.signup__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signup__body-input{
+    height: 37px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    border-left: 1px solid #fbfbfb;
+    border-right: 1px solid #fbfbfb;
+    margin-bottom: 46px;
+    max-width: 295px;
+    width: 95%;
+}
+.signup__body-input:nth-child(1){
+    margin-top: 30px;
+}
+.signup__button{
+    background-color: #ff8b38;
+    border-radius: 0 0 4px 4px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    line-height: 3.7;
+    cursor: pointer;
+}
+.signup__button:hover{
+    filter: contrast(150%);
+}
+
+
+@media all and (max-width:850px) {
+    
+    header{
+        background-repeat: repeat;
+        flex-direction: column;
+        align-items:center;
+    }
+    .header__signup{
+        margin-bottom: 112px;
+    }
+}
+@media all and(max-width:765px){
+    
+    
 }
