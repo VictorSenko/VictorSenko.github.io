@@ -256,6 +256,114 @@ header{
 .main__features-button:hover{
     opacity: 0.9;
 }
+.main__procesess{
+    background-color: #ffffff;
+}
+.main__content-wrapper{
+    padding: 108px 10% 106px 10%;
+}
+.main__content-title{
+    font-size: 36px;
+    width: 405px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+.main__content-divider{
+    width: 62px;
+    border-bottom: 2px solid #ff8b38;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    
+}
+.main__content-inscription{
+    font-size: 14px;
+    width: 405px;
+    text-align: center;
+    color: #a4a5a8;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.main__procesess-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.main__procesess-block{
+    width: 30%;
+}
+.main__procesess-content-lable{
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+    border: 2px solid #ff8b38;
+    margin: 0 auto;
+    margin-bottom: 28px;
+}
+.main__procesess-content-title{
+    width: 200px;
+    text-align: center;
+    margin: 0 auto 28px auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main__procesess-content-inscription{
+    font-size: 14px;
+    color: #86878b;
+    text-align: center;
+}
+.lable-img{
+    display: block;
+    margin: 22px auto;
+}
+.main__pricing{
+    background-color: #f5f5f5;
+}
+.main__pricing-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.main__pricing-block{
+    width: 30.6%;
+}
+.main__pricing-block-style{
+    text-align: center;
+    background-color: #333333;
+    margin-bottom: 1px;
+}
+.main__pricing-block-header{
+    color: #ffffff;
+    line-height: 2.8;
+    font-size: 20px;
+}
+.price-img{
+    margin-top: 30px;
+}
+.main__pricing-block-payment{
+    font-size: 14px;
+    font-weight: bolder;
+    color: #999999;
+    line-height: 3.7;
+    margin-bottom: 0;
+}
+.main__pricing-block-most-popular{
+    border:2.5px solid #ff8b38;
+    background-color: #ff8b38;
+    text-align: center;
+    color: #ffffff;
+}
+.main__pricing-block-additional{
+    font-size: 14px;
+    color: #86878b;
+    text-align: center;
+    background-color: #ffffff;
+    margin-bottom: 1px;
+    line-height: 2.9;
+}
+
+
+
 
 
 @media all and (max-width:1210px){
@@ -269,15 +377,24 @@ header{
 }
 @media all and (max-width:970px){
     .main__features-wrapper{
-        flex-wrap: nowrap;
-        justify-content: space-between;
+        display: block;
         margin: 145px 5% 0 5%;
     }
+    .main__features-wrapper::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .main__features-tabs{
+        float: left;
+    }
     .transition__wrapper{
-        margin: 0 0 60px 5%;
+        margin: 0 0 60px 20%;
+        float: left;    
     }
     .main__features-img{
-        display: none;
+        float: left;
+        margin: 90px 0 50px 30%;
     }
 }
 @media all and (max-width:850px) {
@@ -301,6 +418,16 @@ header{
     .brand__bar-item:nth-child(4){
         margin-right:11%;
     }
+    .transition__wrapper{
+        margin: 0 0 60px 10%;
+    }
+    .main__features-img{
+        display: block;
+        margin: 0 auto;
+        padding: 70px 0 70px 0;
+        float: none;
+    }
+    
 }
 @media all and (max-width:765px){
     .navbar__links{
@@ -336,11 +463,21 @@ header{
         margin-bottom: 40px;
     }
     .transition__content{
-        width: 376px;
+        width: 366px;
     }
     .main__features-display-transition{
-        width: 386px;
+        width: 376px;
         margin-bottom: 15px;
+    }
+    .main__features{
+        overflow: hidden;
+    }
+    .main__features-wrapper{
+        margin-left:  0;
+        width: 100%;
+    }
+    .main__features-tabs{
+        margin-left: 4%;
     }
 }
 @media all and (max-width:570px){
@@ -382,6 +519,10 @@ header{
         float: right;
         margin:50px 30px 0 0;
     }
+    .main__features-tab{
+        width: 100px;
+        height: 100px;
+    }
     
 }
 @media all and (max-width:390px){
@@ -400,6 +541,9 @@ header{
     .main__features-button{
         margin:20px 30px 0 0;
     }
+    .main__features-tabs{
+        margin-left: 2%;
+    }
 }
 @media all and (max-width:360px){
     .header__signup{
@@ -409,14 +553,15 @@ header{
         width: 160px;
     }
     .transition__content{
-        width: 173px;
+        width: 160px;
     }
     .main__features-display-transition{
-        width: 178px;
+        width: 165px;
     }
     .header__signup{
         width: 320px;
     }
+    
 }
 
 

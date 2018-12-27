@@ -3,7 +3,6 @@ window.onload = function(){
         let navBarIcon = document.getElementsByClassName('navbar__icon')[0];
         let sliderTabs = document.getElementsByClassName('main__features-tab');
         let sliderContent = document.getElementsByClassName('main__features-transition-block')[0];
-        let resize = null;
         
         sliderTabs[0].style.backgroundColor = '#ff8b38';
         
@@ -22,8 +21,7 @@ window.onload = function(){
                  document.getElementsByClassName('navbar__links')[0].style.display = "flex";
              }else
                  document.getElementsByClassName('navbar__links')[0].style.display = "none";
-             let width = document.getElementsByClassName('transition-block')[0].offsetWidth; 
-             resize(width);
+             
         });
         
         for(let i = 0; i < sliderTabs.length; i++){
@@ -40,13 +38,7 @@ window.onload = function(){
                     return index;
                 };
                 
-                
-                resize = function resizeText (width){
-                    sliderContent.style.left = -width*index +'px';
-                };
-                
-                
-                
+               
                 for(let i = 0; i < siblings.length; i++){
                    siblings[i].style.backgroundColor = "#333333"; 
                 };
