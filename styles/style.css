@@ -264,7 +264,7 @@ header{
 }
 .main__content-title{
     font-size: 36px;
-    width: 405px;
+    width: 100;
     margin: 0 auto;
     margin-bottom: 30px;
     text-align: center;
@@ -279,11 +279,15 @@ header{
 }
 .main__content-inscription{
     font-size: 14px;
-    width: 405px;
+    width: 100%;
     text-align: center;
     color: #a4a5a8;
     margin: 0 auto;
     margin-bottom: 80px;
+}
+.content__color-white{
+    color: #fff;
+    border-color: #fff;
 }
 .main__procesess-wrapper{
     display: flex;
@@ -361,10 +365,83 @@ header{
     margin-bottom: 1px;
     line-height: 2.9;
 }
+.main__testimonials{
+    background-color: #fff;
+}
+.testimonials__wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.testimonial-block{
+    width: 25.568%;
+}
+.testimonial-block-text{
+    text-align: left;
+    font-size: 14px;
+    width: 100%;
+    padding: 25px 11px 25px 11px;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    color: #86878b;
+}
+.testimonial__text-element{
+    width: 0; height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 25px solid #f5f5f5;
+    margin-left: 25px;
+    margin-bottom: 8px;
+}
+.testimonial-block-person{
+    display: flex;
+}
+.person__wrapper{
+    margin: 10px; 
+}
+.person-name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
 
-
-
-
+}
+.person-position{
+    font-size: 14px;
+    color: #86878b;
+}
+.testimonial__avatar{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+.main__content-inscription-custom{
+    margin-bottom: 35px;
+}
+.custom__section-button{
+    width: 130px;
+    border:2px solid #fff;
+    text-align: center;
+    line-height: 2.4;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.custom__section-button:hover{
+    filter:brightness(80%);
+}
+.main__content-wrapper-custom{
+    padding: 71px 10% 71px 10%;
+}
+.main__custom-section{
+    background-image: url(../images/custom-section-background.png);
+    background-repeat: no-repeat;
+    
+}
+.main__contact-us{
+    background-color: #fff;
+}
+    
+    
+    
 
 @media all and (max-width:1210px){
     .main__features-wrapper{
