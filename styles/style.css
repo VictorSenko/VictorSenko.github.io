@@ -2,6 +2,7 @@ body{
     background-color: #282828;
     margin: 0;
     padding: 0;
+    font-family: OpenSans-Regular;
 }
 .main__wrapper{
     max-width: 1400px;
@@ -26,15 +27,16 @@ body{
     justify-content: space-between;
 }
 .navbar__links-item{
-    color: #ffffff;
+    color: #9a9a9a;
     font-size: 14px;
     cursor: pointer;
+    font-family: OpenSans-Semibold;
 }
 .navbar__links-item:hover{
     color: bisque;
 }
 header{
-    background-image: url(../images/header_background.png);
+    background-image: url(../images/header_background.jpg);
     background-repeat: no-repeat;
     display: flex;
     width: 100%;
@@ -44,7 +46,7 @@ header{
 .header__description{
     display: inline-block;
     margin: 112px 0 0 10.71%;
-    color: #ffffff;
+    color: #f0eeeb;
     max-width: 520px;
 }
 .header__description-logo{
@@ -53,6 +55,7 @@ header{
 .header__description-main{
     font-size: 36px;
     margin-bottom: 40px;
+    font-family: Raleway-Regular;
     
 }
 .header__description-divider{
@@ -62,6 +65,8 @@ header{
 }
 .header__description-additional{
     margin-bottom: 40px;
+    color: #b2afaa;
+    font-family: Raleway-Light, sans-serif;
 }
 .header__description-button{
     width: 130px;
@@ -70,6 +75,7 @@ header{
     line-height: 2.4;
     margin-bottom: 112px;
     cursor: pointer;
+    font-family: OpenSans-Semibold;
 }
 .header__description-button:hover{
     filter:brightness(80%);
@@ -87,6 +93,7 @@ header{
     font-size: 20px;
     line-height: 2.4;
     border-radius: 4px 4px 0 0;
+    font-family: OpenSans-Bold;
 }
 .signup__header-trial{
     color: #ff8b38;
@@ -106,6 +113,7 @@ header{
     margin-bottom: 46px;
     max-width: 295px;
     width: 95%;
+    font-family: OpenSans-Regular;
 }
 .signup__body-input:nth-child(1){
     margin-top: 30px;
@@ -118,6 +126,7 @@ header{
     text-align: center;
     line-height: 3.7;
     cursor: pointer;
+    font-family: OpenSans-Semibold;
 }
 .signup__button:hover{
     filter: contrast(150%);
@@ -144,6 +153,7 @@ header{
 .brand__bar-social-main{
     font-size: 20px;
     padding: 25px 0 10px 0;
+    font-family: OpenSans-Bold;
 }
 .brand__bar-social-alt{
     font-size: 14px;
@@ -206,6 +216,7 @@ header{
     margin-bottom: 2px;
     cursor:pointer;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    font-family: OpenSans-Bold;
 }
 .main__features-tab:nth-child(1){
     border-radius: 4px 4px 0 0;
@@ -215,8 +226,8 @@ header{
 }
 .transition__title{
     font-size: 20px;
-    font-weight: bold;
     margin:8px 0 57px 0;
+    font-family: OpenSans-Bold;
 }
 .transition__content{
     font-size: 14px;
@@ -252,6 +263,7 @@ header{
     cursor:pointer;
     border-radius: 4px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    font-family: OpenSans-Semibold;
 }
 .main__features-button:hover{
     opacity: 0.9;
@@ -268,6 +280,7 @@ header{
     margin: 0 auto;
     margin-bottom: 30px;
     text-align: center;
+    font-family: Raleway-Regular;
     
 }
 .main__content-divider{
@@ -309,7 +322,7 @@ header{
     text-align: center;
     margin: 0 auto 28px auto;
     font-size: 20px;
-    font-weight: bold;
+    font-family: OpenSans-Bold;
 }
 .main__procesess-content-inscription{
     font-size: 14px;
@@ -335,11 +348,13 @@ header{
     text-align: center;
     background-color: #333333;
     margin-bottom: 1px;
+    font-family: OpenSans-Semibold;
 }
 .main__pricing-block-header{
     color: #ffffff;
     line-height: 2.8;
     font-size: 20px;
+    font-family: OpenSans-Bold;
 }
 .price-img{
     margin-top: 30px;
@@ -356,6 +371,7 @@ header{
     background-color: #ff8b38;
     text-align: center;
     color: #ffffff;
+    font-family: OpenSans-Bold;
 }
 .main__pricing-block-additional{
     font-size: 14px;
@@ -402,7 +418,7 @@ header{
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
-
+    font-family: OpenSans-Bold;
 }
 .person-position{
     font-size: 14px;
@@ -415,6 +431,7 @@ header{
 }
 .main__content-inscription-custom{
     margin-bottom: 35px;
+    font-family: Raleway-Light;
 }
 .custom__section-button{
     width: 130px;
@@ -424,6 +441,7 @@ header{
     color: #fff;
     cursor: pointer;
     margin: 0 auto;
+    font-family: OpenSans-Bold;
 }
 .custom__section-button:hover{
     filter:brightness(80%);
@@ -432,7 +450,7 @@ header{
     padding: 60px 10% 60px 10%;
 }
 .main__custom-section{
-    background-image: url(../images/custom-section-background.png);
+    background-image: url(../images/custom-section-background.jpg);
     background-repeat: no-repeat;
     
 }
@@ -521,7 +539,7 @@ footer{
     text-align: center;
     padding-bottom: 13px;
 }
-    
+
     
     
 
@@ -588,6 +606,23 @@ footer{
     }
     
 }
+@media all and (max-width:790px){
+    .main__pricing-block-additional-basic{
+        height: 80px;
+        line-height: 6;
+    } 
+    .main__procesess-content-title{
+        width: 100%;
+        font-size: 18px;
+    }
+    .main__procesess-block{
+        width: 30%;
+        margin: 10px;
+    }
+    .main__procesess-wrapper{
+        justify-content: center;
+    }
+}
 @media all and (max-width:765px){
     .navbar__links{
         position: absolute;
@@ -638,6 +673,24 @@ footer{
     .main__features-tabs{
         margin-left: 4%;
     }
+    .main__pricing-block-additional{
+        font-size: 12px;
+    }
+    .main__pricing-block-additional-basic{
+        height: 40px;
+        line-height: 1;
+    } 
+}
+@media all and (max-width:715px){
+    .main__procesess-content-title{
+        height: 48px;
+    }
+}
+@media all and (max-width:680px){
+    .main__pricing-block-additional-basic{
+        height: 80px;
+        line-height: 6;
+    } 
 }
 @media all and (max-width:570px){
     .transition__content{
@@ -722,6 +775,38 @@ footer{
     }
     
 }
+
+@font-face{
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'OpenSans-Semibold';
+    src: url('../fonts/OpenSans/OpenSans-Semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/OpenSans/OpenSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Raleway-Regular';
+    src: url('../fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Raleway-Light';
+    src: url('../fonts/Raleway/Raleway-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 
 
