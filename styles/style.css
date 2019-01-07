@@ -829,7 +829,7 @@ footer{
 }
 @font-face{
     font-family: 'OpenSans-Semibold';
-    src: url('../fonts/OpenSans/OpenSans-Semibold.ttf') format('truetype');
+    src: url('../fonts/OpenSans/OpenSans-SemiBold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
