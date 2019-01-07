@@ -7,7 +7,6 @@ window.onload = function(){
         sliderTabs[0].style.backgroundColor = '#ff8b38';
         
         navBarIcon.addEventListener('click',()=>{
-            console.log(this);
             let item = document.getElementsByClassName('navbar__links')[0];
             if(item.style.display === 'none'){
                 item.style.display = 'flex';

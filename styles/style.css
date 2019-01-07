@@ -739,6 +739,9 @@ footer{
         margin-top: 60px;
         padding-bottom: 55px;
     }
+    .navbar__links{
+        top:40px; left: 50%;
+    }
     
     
 }
@@ -811,6 +814,9 @@ footer{
     }
     .header__signup{
         width: 320px;
+    }
+    .navbar__links{
+        top:40px; left: 40%;
     }
     
 }
